@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-      <!-- Navbar -->
-			<nav>
-	    		<ul>
-	          <div class="top fadeInDown animated">	
-	        	  <li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/projects">Projects</a></li>
-	        		<li><a href="/rowing">Rowing</a></li>
-	      			<li><a href="/blog">Blog</a></li>
-            </div>
-	    		</ul>
-			</nav>
-      
-      <!-- Page Content -->
-			<div class="container">
-			{{ content }}
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="My static HTML5 website">
+	<meta name="author" content="Sean">
+
+	<title>{{ page.title }}</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css?v=1.0">
+</head>
+<body>
+	<!-- Navbar -->
+	<nav>
+		<ul>
+  			<div class="top fadeInDown animated">	
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/projects">Projects</a></li>
+				<li><a href="/rowing">Rowing</a></li>
+				<li><a href="/blog">Blog</a></li>
 			</div>
-			
-			<footer>
-	    		<div class="bottom fadeInUp animated">
-            <ul>
-              <li><a href="mailto:#">email</a></li>
-              <li><a href="https://github.com/Top-Dog">github.com/Top-Dog</a></li>
-            </ul>
-			    </div>
-			</footer>
-      
-      <!-- Load Scripts -->
-      <link rel="javascript" href="js/script.js">
-		</body>
-	</html>
+		</ul>
+	</nav>
+
+	<!-- Page Content -->
+	<div class="container">
+	{{ content }}
+	</div>
+	
+	<!-- Page Footer -->
+	<footer>
+		<div class="bottom fadeInUp animated">
+			<ul>
+			<li><a href="mailto:#">email</a></li>
+			<li><a href="https://github.com/Top-Dog">github.com/Top-Dog</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Load Scripts -->
+	<link rel="javascript" href="js/script.js">
+</body>
+</html>
